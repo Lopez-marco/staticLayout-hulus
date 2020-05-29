@@ -1,6 +1,6 @@
 .master{ 
     display: grid;
-    background-image: url(../StaticLayout/destokhulu.jpg);
+    background-image: url(../StaticLayout/style/destokhulu.jpg);
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -38,7 +38,7 @@ h2{
     font-family: 'Graphik',Helvetica,Arial,sans-serif;
 }
 
-p{
+.addon{
     text-align: center;
     color: white;
     font-size: 15px;
@@ -57,7 +57,7 @@ p{
 .free{
     background-color: white;
     color: black;
-    border: none;
+    border: none transparent;
     text-align: center;
     align-content: center;
     font-size: 14px;
@@ -67,6 +67,11 @@ p{
 
 .free:hover{
     opacity: 0.80;
+}
+
+.free:focus{
+    border-color: transparent;
+    outline: none;
 }
 
 .trial{
@@ -81,13 +86,57 @@ p{
 .bundle{
     /* border: 0 transparent; */
     display: grid;
-    grid-template-columns: 25% 25% 25%;
+    grid-template-columns: 30% 50% 25%;
+    /* grid-template-rows: initial; */
     padding: 40px;
     height: 70px;
     background-image: linear-gradient(to right, #081721, #0E4455);
 }
 
 .Bundle2{
+    position: relative;
     color: #1EBD9D;
+    bottom: 20px;
+    font-size: 13px;
+    font-family: 'Graphik',Helvetica,Arial,sans-serif;
+}
+
+.bundle3{
+    position: relative;
+    color: white;
+    bottom: 23px;
+    font-size: 24px;
+    font-family: 'Graphik',Helvetica,Arial,sans-serif;
+}
+
+.bundle4{
+    position: relative;
+    color: white;
+    bottom: 30px;
+    font-size: 13px;
+    font-family: 'Graphik',Helvetica,Arial,sans-serif; 
+    opacity: .80;
+}
+
+.buynow{
+    position: relative;
+    left: 130px;
+    background-color: transparent;
+    color: white;
+    border-color: white;
     text-align: center;
+    align-content: center;
+    font-size: 14px;
+    padding: 20px 25px;
+    border-radius: 4px;
+}
+
+.terms{
+    position: relative;
+    color: white;
+    bottom: 5px;
+    left: 155px;
+    font-size: 10px;
+    font-family: 'Graphik',Helvetica,Arial,sans-serif; 
+    opacity: .80;
 }
